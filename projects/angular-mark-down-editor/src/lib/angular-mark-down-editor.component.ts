@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-ang-markdown-ediotr',
+  selector: 'lib-AngularMarkDownEditor',
   template: `
     <p>
-      ang-markdown-ediotr works!
+      angular-mark-down-editor works!
     </p>
   `,
   styles: []
 })
-export class AngMarkdownEdiotrComponent implements OnInit {
+export class AngularMarkDownEditorComponent implements OnInit {
 
   constructor() { }
 

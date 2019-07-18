@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "ang-markdown-ediotr": [
-        "dist/ang-markdown-ediotr"
+      "angular-mark-down-editor": [
+        "dist/angular-mark-down-editor"
       ],
-      "ang-markdown-ediotr/*": [
-        "dist/ang-markdown-ediotr/*"
+      "angular-mark-down-editor/*": [
+        "dist/angular-mark-down-editor/*"
       ]
     }
   }

@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/ang-markdown-ediotr",
+  "dest": "../../dist/angular-mark-down-editor",
   "lib": {
     "entryFile": "src/public_api.ts"
   }

@@ -1,27 +1,61 @@
-# AngMarkDown
+# Angular MarkDown Editor
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+* A directive for MarkDown which can be used with text area to make text area compatible for mark down support.
+* It is developed using `Angular >=7.1.0` and its newly introduced `ng g library` schematics.
+* Library location: `projects/angular-mark-down-editor` directory of this repository.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Examples/Demo
 
-## Code scaffolding
+* Live Demo [Example](https://stackblitz.com/edit/angular-ksq5mm)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+`npm i ang-mark-down-editor`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## API
 
-## Running unit tests
+`import { AngularMarkDownEditorModule } from 'ang-mark-down-editor';`<br>
+`directive: MarkDownEditor`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+ ```typescript
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    // Module File
+    import { AngularMarkDownEditorModule } from 'ang-mark-down-editor'
 
-## Further help
+    @NgModule({ 
+        imports: [AngularMarkDownEditorModule]
+    })
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    // Component File
+    import { Component } from '@angular/core';
+
+    @Component({
+      selector: 'my-app',
+      template: `<textarea MarkDownEditor (valueChange)="onValueChange($event)">
+                 </textarea>`,
+      styleUrls: [ './app.component.css' ]
+    })
+    export class AppComponent  {
+    }
+
+  ```
+  
+## Test
+
+Run tests
+
+```
+npm test
+```
+
+## License
+
+[MIT](https://tldrlegal.com/license/mit-license) © [Vishal Hasnani](https://github.com/Hasnanivishal)
+
+
+**Thanks for Installing**
+
+> Conatct me for any suggestion/issues -> hasnanivishal@gmail.com

@@ -6,6 +6,6 @@ import { MarkDownEditorDirective } from './mark-down-editor.directive';
   declarations: [AngularMarkDownEditorComponent, MarkDownEditorDirective],
   imports: [
   ],
-  exports: [AngularMarkDownEditorComponent]
+  exports: [AngularMarkDownEditorComponent, MarkDownEditorDirective]
 })
 export class AngularMarkDownEditorModule { }

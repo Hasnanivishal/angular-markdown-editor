@@ -1,0 +1,1 @@
+Simple MarkDownEditor for Angular 2+.

@@ -9,6 +9,8 @@
 
 * Live Demo [Example](https://stackblitz.com/edit/angular-ksq5mm)
 
+![angular-mark-down-editor](https://i.stack.imgur.com/lKnSi.png)
+
 ## Installation
 
 `npm i ang-mark-down-editor`

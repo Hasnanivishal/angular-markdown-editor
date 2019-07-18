@@ -2,7 +2,7 @@ import { Directive, ElementRef, Renderer2, Output, EventEmitter } from '@angular
 
 @Directive({
   // tslint:disable-next-line:directive-selector
-  selector: '[MarkDownEditor]'
+  selector: '[appMarkDownEditor]'
 })
 export class MarkDownEditorDirective {
   boldButton: any;
@@ -17,7 +17,8 @@ export class MarkDownEditorDirective {
   previewDiv: any;
   @Output() valueChange = new EventEmitter<object>();
 
-  constructor(private element: ElementRef, private renderer: Renderer2) { }
+  constructor(private element: ElementRef, private renderer: Renderer2) { 
+  }
 
   // tslint:disable-next-line:use-life-cycle-interface
   ngOnInit() {

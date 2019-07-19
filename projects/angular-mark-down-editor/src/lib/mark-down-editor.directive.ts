@@ -1,10 +1,12 @@
-import { Directive, ElementRef, Renderer2, Output, EventEmitter } from '@angular/core';
+import { Directive, ElementRef, Renderer2, Output, EventEmitter, Input } from '@angular/core';
 
 @Directive({
   // tslint:disable-next-line:directive-selector
   selector: '[appMarkDownEditor]'
 })
 export class MarkDownEditorDirective {
+
+  @Input() appMarkDownEditor = true;
   boldButton: any;
   boldButtonText: any;
 
@@ -47,6 +49,11 @@ export class MarkDownEditorDirective {
     this.renderer.setStyle(previewText, 'border', '1px solid gray');
     const previewTextData = this.renderer.createText('PREVIEW');
     this.renderer.appendChild(previewText, previewTextData);
+
+    if (!this.appMarkDownEditor) {
+      this.renderer.setStyle(previewText, 'display', 'none');
+      this.renderer.setStyle(this.previewDiv, 'display', 'none');
+    }
 
     // Bold Button
     this.boldButton = this.renderer.createElement('a');
